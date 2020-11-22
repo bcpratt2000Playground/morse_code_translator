@@ -22,6 +22,7 @@ fn main() {
         println!("Exiting");
     } else {
 
+        //precalculate estimated capacity of the output string in order to avoid reallocations & initalize it
         let mut output_string = String::with_capacity(((inp.len() as f32)/3.2) as usize);
 
         // println!("Estimated String Size: {}", output_string.capacity());
